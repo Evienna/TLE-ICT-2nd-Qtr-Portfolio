@@ -1,0 +1,139 @@
+
+    		.h1 
+		{
+      			background-color: #FFFFFF;
+      			color: #27004b;
+			padding: 20px;
+      			text-align: left;
+			width: 100%; 
+			height: 20px;
+			margin: 0;
+			align-items: center;
+    		}
+
+		.h2 
+		{
+			margin: 0;
+			height: 560px;
+    		}
+
+
+
+	
+    		.navbar
+    		{ 
+			position:sticky; 
+			width: 100%; 
+			height: 50px; 
+			display: flex; 
+			border-radius: 8px;
+			justify-content: left; 
+			align-items: center; 
+			padding-right: 40px;
+			padding-left: 40px;
+      			border-top: 7px double #FFFFFF;
+      			border-bottom: 7px double #FFFFFF;
+			background-color: #27004b;
+			z-index: 1000;
+    		}
+		.nava
+		{
+			display: inline-block;
+			font-size: 20px;
+			font-family: poppins;
+			color:#FFFFFF;
+			padding-right: 40px;
+			padding-left: 40px;
+			justify-content: left;
+			align-items: left; 
+			text-decoration: none;
+			z-index: 1000;
+		}
+		.navspan
+		{
+			position: absolute;
+			top: 0;
+			left: 300px;
+			width: 190px;
+			height: 100%;
+			background: linear-gradient(45deg, #60009c, #ae00ff);
+			border-radius: 8px;
+			transition: left 0.5s;
+		}
+		
+		
+		/* Move the span when hovering over each link */
+			.navbar a:nth-child(1):hover ~ .navspan {
+			     left: 60px;
+		}
+			.navbar a:nth-child(2):hover ~ .navspan {
+			    left: 300px;
+		}
+			.navbar a:nth-child(3):hover ~ .navspan {
+			    left: 525px;
+		}
+			.navbar a:nth-child(4):hover ~ .navspan {
+			    left: 732px;
+		}
+	
+
+
+
+body {
+    margin: 0;
+    font-family: Georgia;
+}
+
+.layout {
+    display: flex; /* This makes sidebar and content sit side by side */
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #27004b;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    border-bottom: 2px solid #a564f8;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #e6fffa;
+    border-radius: 15px;
+    margin: 5%;
+    position: relative;
+}
+
+.main-content::before {
+    content: "";
+    display: block;
+    height: 0.25em;
+    width: 100%;
+    border-top: 0.25em dotted black;
+    margin-bottom: 20px;
+}

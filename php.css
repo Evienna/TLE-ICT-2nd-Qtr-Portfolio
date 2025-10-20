@@ -1,0 +1,214 @@
+
+    		.h1 
+		{
+      			background-color: #FFFFFF;
+      			color: #27004b;
+			padding: 20px;
+      			text-align: left;
+			width: 100%; 
+			height: 20px;
+			margin: 0;
+			align-items: center;
+    		}
+
+		.h2 
+		{
+			margin: 0;
+			height: 600px;
+    		}
+
+
+
+	
+    		.navbar
+    		{ 
+			position:sticky; 
+			width: 100%; 
+			height: 50px; 
+			display: flex; 
+			border-radius: 8px;
+			justify-content: left; 
+			align-items: center; 
+			padding-right: 40px;
+			padding-left: 40px;
+      			border-top: 7px double #FFFFFF;
+      			border-bottom: 7px double #FFFFFF;
+			background-color: #27004b;
+			z-index: 1000;
+    		}
+		.nava
+		{
+			display: inline-block;
+			font-size: 20px;
+			font-family: poppins;
+			color:#FFFFFF;
+			padding-right: 40px;
+			padding-left: 40px;
+			justify-content: left;
+			align-items: left; 
+			text-decoration: none;
+			z-index: 1000;
+		}
+		.navspan
+		{
+			position: absolute;
+			top: 0;
+			left: 60px;
+			width: 190px;
+			height: 100%;
+			background: linear-gradient(45deg, #4a1d95, #a564f8);
+			border-radius: 8px;
+			transition: left 0.5s;
+		}
+
+
+
+.video video {
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid #27004b;
+}
+
+		
+		
+		/* Move the span when hovering over each link */
+			.navbar a:nth-child(1):hover ~ .navspan {
+			     left: 60px;
+		}
+			.navbar a:nth-child(2):hover ~ .navspan {
+			    left: 300px;
+		}
+			.navbar a:nth-child(3):hover ~ .navspan {
+			    left: 525px;
+		}
+			.navbar a:nth-child(4):hover ~ .navspan {
+			    left: 732px;
+		}
+	
+
+
+.card {
+    background-color: #d2b2fb;
+    border: 7px double #27004b;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px #efe3ff;
+    font-family: georgia;
+    font-size: 20px;
+}
+
+.carda {
+    background-color: #d2b2fb;
+    border: 7px double #27004b;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 20px;
+    font-family: georgia;
+    font-size: 20px;
+    margin-top: 0;
+}
+.card h2 {
+    margin-top: 0;
+}
+
+.carda h2 {
+    margin-top: 0;
+}
+
+.carda h3 {
+    margin-top: 0;
+}
+
+.flip-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 260px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    border: 3px solid #27004b;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+.flip-card-front {
+    background-color: #f4f4f4;
+    color: #27004b;
+    z-index: 2; /* Ensure it's on top initially */
+}
+
+.flip-card-back {
+    background-color: #a564f8;
+    color: white;
+    transform: rotateY(180deg); /* Only the back is rotated */
+    z-index: 1;
+
+}
+
+.friend-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.personal-section {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.collage {
+    flex: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+
+.collage img {
+    width: 100%;
+    border-radius: 8px;
+    border: 3px solid #27004b;
+}
+
+.personal-details {
+    flex: 1;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    background-color: #d2b2fb;
+    padding: 20px;
+    border-radius: 8px;
+    border: 7px double #27004b;
+}
+
