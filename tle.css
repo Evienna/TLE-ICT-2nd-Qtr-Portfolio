@@ -123,10 +123,12 @@ body {
 .main-content {
     flex: 1;
     padding: 40px;
-    background-color: #e6fffa;
+    background-color: #f0c9ff;
     border-radius: 15px;
     margin: 5%;
     position: relative;
+    text-shadow: 1px 1px #efe3ff;
+
 }
 
 .main-content::before {
@@ -136,4 +138,13 @@ body {
     width: 100%;
     border-top: 0.25em dotted black;
     margin-bottom: 20px;
+}
+
+.bo {
+    font-family: georgia;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #fcf4ff;
+    text-align: justified;
+
 }

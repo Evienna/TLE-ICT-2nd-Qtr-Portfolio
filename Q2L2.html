@@ -34,7 +34,7 @@
     <h1 class="h1">Vivienne's E-Portfolio</h1>
 
     <nav class="navbar">
-        <a class="nava" href="EPORT.html">My Personal Space</a>
+        <a class="nava" href="index.html">My Personal Space</a>
         <a class="nava" href="TLE.html">TLE-ICT Outputs</a>
         <a class="nava" href="R.html">2nd Qtr Reflections</a>
         <a class="nava" href="AP.html">AP Contents</a>
@@ -54,18 +54,89 @@
     <aside class="sidebar">
         <h2>Lessons</h2>
         <ul>
-            <li><a href="Q2L1.html">#Q2 Lesson 1</a></li>
-            <li><a href="Q2L2.html">#Q2 Lesson 2</a></li>
-            <li><a href="Q2L3.html">#Q2 Lesson 3</a></li>
-            <li><a href="Q2L4.html">#Q2 Lesson 4</a></li>
-            <li><a href="Q2L5.html">#Q2 Lesson 5</a></li>
-            <li><a href="Q2L6.html">#Q2 Lesson 6</a></li>
+            <li><a href="TLE.html">Q2 Lessons</a></li>
+            <li><a href="Q2L1.html">Q2 Lesson 1</a></li>
+            <li><a href="Q2L2.html">Q2 Lesson 2</a></li>
+            <li><a href="Q2L3.html">Q2 Lesson 3</a></li>
+            <li><a href="Q2L4.html">Q2 Lesson 4</a></li>
+            <li><a href="Q2L5.html">Q2 Lesson 5</a></li>
+            <li><a href="Q2L6.html">Q2 Lesson 6</a></li>
         </ul>
     </aside>
 
     <main class="main-content">
-        <h1>Q2 Lesson 2</h1>
-        <p>.</p>
+        <h1>Q2 Lesson 2: Stylesheets and CSS Syntax</h1>
+        <pre class="bo">
+<h2>Broswer Output:</h2>
+    <iframe src="Q2L2B.html" width="600" height="400"></iframe>
+
+CSS Syntax Basics:
+
+Uses selectors, properties, and values.
+Syntax: selector { property: value; }
+Example: h1 { color: blue; font-size: 12px; }
+
+Key Symbols in CSS:
+
+{ } – Curly braces to enclose declarations.
+: – Separates property from value.
+; – Ends each declaration.
+
+Style Sheet Components:
+
+Selector: Targets HTML elements.
+Property: Defines the style attribute (e.g., color, font-size).
+Value: Specifies the setting for the property.
+Declaration: A single style rule.
+Declaration Block: Group of declarations for a selector.
+
+How Style Sheets Work:
+
+Separate content (HTML) from appearance (CSS).
+CSS tells the browser how to display HTML elements.
+
+CSS Code Guidelines:
+
+Use &lt;style type="text/css"&gt; for embedded styles.
+Enclose CSS in HTML comments (<!-- ... -->) for older browser compatibility (mostly outdated now).
+
+Types of CSS:
+
+
+External Style Sheet:
+
+Stored in .css files.
+Linked using style.css.
+Affects multiple pages; easy to maintain.
+
+
+Embedded (Internal) Style Sheet:
+
+Placed within &lt;style&gt; tags in the <head> section.
+Affects only that specific HTML document.
+Overrides external styles.
+
+
+Inline Style:
+
+Written directly in the HTML tag using the style attribute.
+Affects only that specific element.
+Overrides both embedded and external styles.
+
+
+Creating and Linking External CSS:
+
+Write styles in Notepad and save with .css extension.
+Link to HTML using &lt;link&gt; tag in the <head> section.
+
+CSS Comments:
+
+Start with /* and end with */.
+Used to explain code and improve readability.
+Ignored by browsers.
+
+
+</pre>
     </main>
 </div>
 
