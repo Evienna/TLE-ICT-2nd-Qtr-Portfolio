@@ -120,6 +120,12 @@ body {
     text-decoration: underline;
 }
 
+.sidebar a:hover {
+  background-color: #a64ca6;
+  color: #fff;
+  transition: 0.3s;
+}
+
 .main-content {
     flex: 1;
     padding: 40px;
