@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vivienne's E-Portfolio - Q4A2</title>
+    <link rel="stylesheet" href="ap.css" type="text/css">
+    <style type="text/css">
+        /* Specific Styles for this Lesson */
+        .lesson-header { border-bottom: 5px solid #006052; margin-bottom: 30px; padding-bottom: 10px; }
+        .lesson-header h1 { text-shadow: 2px 2px #f4fffc; color: #023236; }
+        
+        /* Grid for the 4 Pillars */
+        .gampanin-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+            gap: 20px; 
+            margin: 20px 0; 
+        }
+        
+        .gampanin-card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 12px; 
+            border-top: 8px solid #006052; 
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .gampanin-card h3 { color: #006052; margin-top: 0; border-bottom: 1px solid #67e5ac; padding-bottom: 5px;}
+
+        /* Image Placeholder Box */
+        .img-placeholder {
+            width: 100%;
+            height: 150px;
+            background: #f4fffc;
+            border: 2px dashed #006052;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            color: #006052;
+            font-size: 0.8em;
+            overflow: hidden;
+        }
+
+        /* Checklist Style for Tungkulin */
+        .tungkulin-list { 
+            background: #023236; 
+            color: white; 
+            padding: 30px; 
+            border-radius: 15px; 
+            columns: 2; /* Splits the list into two columns */
+            column-gap: 40px;
+        }
+
+        .tungkulin-list ul { list-style: none; padding: 0; }
+        .tungkulin-list li { 
+            margin-bottom: 15px; 
+            padding-left: 25px; 
+            position: relative; 
+            break-inside: avoid;
+        }
+        .tungkulin-list li::before { 
+            content: '✔'; 
+            position: absolute; 
+            left: 0; 
+            color: #2ac2a9; 
+            font-weight: bold; 
+        }
+
+        #progress-container { position: fixed; top: 0; left: 0; width: 100%; height: 5px; background: transparent; z-index: 2000; }
+        #progress-bar { height: 100%; background: #2ac2a9; width: 0%; }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+
+<body>
+    <div id="progress-container"><div id="progress-bar"></div></div>
+    
+    <h1 style="margin:0;" class="h1">Vivienne's E-Portfolio</h1>
+
+    <nav class="navbar">
+        <a class="nava" href="index.html">My Personal Space</a>
+        <a class="nava" href="TLE.html">TLE-ICT Outputs</a>
+        <a class="nava" href="R.html">2nd Qtr Reflections</a>
+        <a class="nava" href="AP.html">AP Contents</a>
+        <span class="navspan"></span>
+    </nav>
+
+    <div class="h2">
+        <img src="AP CONTENT.png" alt="BANNER" width="100%">
+    </div>
+
+    <br><hr style="border: 7px dotted #006052;"><br>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Aralin</h2>
+            <ul>
+                <li><a href="AP.html">Yunit II - Maykroekonomiks </a></li>
+                <li><a href="Q2A1.html">Q2 Demand</a></li>
+                <li><a href="Q2A2.html">Q2 Supply</a></li>
+                <li><a href="Q4A1.html">Q4 Pambansang Kaunlaran</a></li>
+                <li><a href="Q4A2.html" style="background: rgba(255,255,255,0.2); color:#67e5ac;">Q4 Gampanin ng Mamamayan</a></li>
+                <li><a href="Q4A3.html">Q4 Sektor ng Agrikultura</a></li>
+                <li><a href="Q4REF.html">Q4 Reflection</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section class="lesson-header reveal">
+                <h1>Mga Gampanin sa Pag-unlad</h1>
+                <p class="subtitle">Ang Papel ng Mamamayan sa Pambansang Kaunlaran</p>
+            </section>
+
+            <div class="gampanin-grid reveal">
+                <div class="gampanin-card">
+                    <div class="img-placeholder">
+                        <img src="buwis.png" alt="Insert Image: Pagbabayad ng Buwis" onerror="this.style.display='none';"> 
+                        <span>[Image: Pagbabayad ng Buwis]</span>
+                    </div>
+                    <h3>Mapanagutan</h3>
+                    <ul>
+                        <li>Tamang pagbabayad ng buwis</li>
+                        <li>Makialam sa mga isyu</li>
+                    </ul>
+                </div>
+
+                <div class="gampanin-card">
+                    <div class="img-placeholder">
+                        <span>[Image: Kooperatiba/Negosyo]</span>
+                    </div>
+                    <h3>Maabilidad</h3>
+                    <ul>
+                        <li>Bumuo o sumali sa kooperatiba</li>
+                        <li>Pagnenegosyo</li>
+                    </ul>
+                </div>
+
+                <div class="gampanin-card">
+                    <div class="img-placeholder">
+                        <span>[Image: Tamang Pagboto]</span>
+                    </div>
+                    <h3>Maalam</h3>
+                    <ul>
+                        <li>Tamang pagboto</li>
+                        <li>Pakikilahok sa mga proyekto</li>
+                    </ul>
+                </div>
+
+                <div class="gampanin-card">
+                    <div class="img-placeholder">
+                        <span>[Image: Produktong Pilipino]</span>
+                    </div>
+                    <h3>Makabansa</h3>
+                    <ul>
+                        <li>Participative governance</li>
+                        <li>Pagtangkilik sa produktong Pilipino</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="l1 reveal" style="background: transparent; border: none;">
+                <h2 style="color: #023236; text-shadow: 1px 1px white;">Additional: Mga Tungkulin</h2>
+            </div>
+
+            <div class="tungkulin-list reveal">
+                <ul>
+                    <li>Suportahan ang ating pamahalaan</li>
+                    <li>Sundin at igalang ang batas</li>
+                    <li>Alagaan ang ating kapaligiran</li>
+                    <li>Tumulong sa pagpuksa sa korapsyon</li>
+                    <li>Maging produktibo</li>
+                    <li>Tangkilikin ang produktong Pilipino</li>
+                    <li>Magtipid ng enerhiya</li>
+                    <li>Makilahok sa gawaing pansibiko</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+            
+            let reveals = document.querySelectorAll(".reveal");
+            for (let i = 0; i < reveals.length; i++) {
+                let windowHeight = window.innerHeight;
+                let elementTop = reveals[i].getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        };
+    </script>
+</body>
+</html>
