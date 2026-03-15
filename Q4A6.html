@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vivienne's E-Portfolio - Q4A6 Impormal na Sektor</title>
+    <link rel="stylesheet" href="ap.css" type="text/css">
+    <style type="text/css">
+        .lesson-header { border-bottom: 5px solid #006052; margin-bottom: 30px; padding-bottom: 10px; }
+        .lesson-header h1 { text-shadow: 2px 2px #f4fffc; color: #023236; }
+        
+        /* Underground Economy Theme */
+        .informal-intro { background: #34495e; color: white; padding: 25px; border-radius: 15px; margin-bottom: 30px; border-bottom: 8px solid #2c3e50; }
+        .informal-intro h2 { color: #f1c40f; margin-top: 0; }
+
+        /* Example Cards (Post-it Style) */
+        .example-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin: 20px 0; }
+        .example-note { background: #feff9c; padding: 15px; border-radius: 5px; transform: rotate(-1deg); box-shadow: 3px 3px 5px rgba(0,0,0,0.1); color: #333; font-family: 'Courier New', Courier, monospace; font-weight: bold; border: 1px solid #f1f178; }
+        .example-note:nth-child(even) { transform: rotate(1.5deg); background: #fff7af; }
+
+        /* Reason & Effect Section */
+        .flex-container { display: flex; gap: 20px; flex-wrap: wrap; margin: 30px 0; }
+        .flex-item { flex: 1; min-width: 300px; background: white; padding: 20px; border-radius: 12px; border-top: 5px solid #006052; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .flex-item h3 { color: #006052; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+
+        /* Program Table */
+        .program-table { width: 100%; border-collapse: collapse; margin-top: 20px; background: white; }
+        .program-table th { background: #006052; color: white; padding: 12px; text-align: left; border: 1px solid #ddd; }
+        .program-table td { padding: 12px; border: 1px solid #ddd; font-size: 0.95em; vertical-align: top; }
+        .program-table tr:nth-child(even) { background: #f9f9f9; }
+
+        /* Warning Box for Illegal Activities */
+        .warning-box { background: #fff5f5; border: 2px solid #ff4d4d; color: #b91c1c; padding: 15px; border-radius: 10px; margin: 20px 0; }
+
+        /* Reveal & Progress */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        #progress-container { position: fixed; top: 0; left: 0; width: 100%; height: 5px; background: transparent; z-index: 2000; }
+        #progress-bar { height: 100%; background: #2ac2a9; width: 0%; }
+    </style>
+</head>
+
+<body>
+    <div id="progress-container"><div id="progress-bar"></div></div>
+    
+    <h1 style="margin:0;" class="h1">Vivienne's E-Portfolio</h1>
+
+    <nav class="navbar">
+        <a class="nava" href="index.html">My Personal Space</a>
+        <a class="nava" href="TLE.html">TLE-ICT Outputs</a>
+        <a class="nava" href="R.html">2nd Qtr Reflections</a>
+        <a class="nava" href="AP.html">AP Contents</a>
+        <span class="navspan"></span>
+    </nav>
+
+    <div class="h2">
+        <img src="AP CONTENT.png" alt="BANNER" width="100%">
+    </div>
+
+    <br><hr style="border: 7px dotted #006052;"><br>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Aralin</h2>
+            <ul>
+                <li><a href="AP.html">Yunit II - Maykroekonomiks </a></li>
+                <li><a href="Q2A1.html">Q2 Demand</a></li>
+                <li><a href="Q2A2.html">Q2 Supply</a></li>
+                <li><a href="Q2A3.html">Q2 Price Elasticity</a></li>
+                <li><a href="Q2A4.html">Q2 Market Equilibrium</a></li>
+                <li><a href="Q2A5.html">Q2 Iba't Ibang Estruktura sa Pamilihan</a></li>
+                <li><a href="Q2A6.html">Q2 Bahaging Ginagampanan ng Pamahalaan sa Regulasyon ng mga Gawaing Pangkabuhayan</a></li>
+                <li><a href="Q2REF.html">Q2 Reflection</a></li>
+                <li><a href="AP4.html">Yunit IV - Pambansang Kaunlaran </a></li>
+                <li><a href="Q4A1.html">Q4 Pambansang Kaunlaran</a></li>
+                <li><a href="Q4A2.html">Q4 Mga Gampanin ng Mamamayan sa Pag-Unlad ng Bansa</a></li>
+                <li><a href="Q4A3.html">Q4 Sektor ng Agrikultura</a></li>
+                <li><a href="Q4A4.html">Q4 Sektor ng Industriya</a></li>
+                <li><a href="Q4A5.html">Q4 Sektor ng Paglilingkod</a></li>
+                <li><a href="Q4A6.html" style="background: rgba(255,255,255,0.2); color:#67e5ac;">Q4 Impormal Sektor</a></li>
+                <li><a href="Q4A7.html">Q4 Kalakalang Panlabas</a></li>
+                <li><a href="Q4REF.html">Q4 Reflection</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section class="lesson-header reveal">
+                <h1>Impormal na Sektor</h1>
+                <p class="subtitle">Ang "Underground Economy" at ang Tagasalo ng Mamamayan</p>
+            </section>
+
+            <div class="informal-intro reveal">
+                <h2>Ano ang Impormal na Sektor?</h2>
+                <p>Ito ay ang sektor ng ekonomiya na <strong>walang pormal o salat sa mga dokumentong kailangan</strong> sa pagsasagawa ng gawaing pang-ekonomiya. Ang kita rito ay <u>hindi naisasama sa kabuuang GDP</u> ng bansa.</p>
+                <p>Nagsisilbi itong paraan ng mamamayan upang magkaroon ng kabuhayan o dagdag kita sa panahon ng pangangailangan.</p>
+            </div>
+
+            <h2 class="reveal">Mga Halimbawa</h2>
+            <div class="example-grid reveal">
+                <div class="example-note">Nagtitinda sa kalsada</div>
+                <div class="example-note">Pedicab Driver</div>
+                <div class="example-note">Karpintero</div>
+                <div class="example-note">Sari-sari store</div>
+                <div class="example-note">Sidewalk vendors</div>
+            </div>
+
+            <div class="warning-box reveal">
+                <strong>Iba pang Anyo (Ilegal na Gawain):</strong>
+                <p style="margin: 5px 0 0 0;">Kabilang din dito ang pagnanakaw, pagbebenta ng ilegal na gamot, piracy, at prostitusyon.</p>
+            </div>
+
+            <div class="flex-container reveal">
+                <div class="flex-item">
+                    <h3>Bakit pinapasok ito?</h3>
+                    <ul>
+                        <li>Makaligtas sa pagbabayad ng buwis.</li>
+                        <li>Makaiwas sa <em>bureaucratic red tape</em> (mahabang proseso).</li>
+                        <li>Kakulangan sa regulasyon ng pamahalaan.</li>
+                        <li>Hindi nangangailangan ng malaking kapital.</li>
+                        <li>Labanan ang matinding kahirapan.</li>
+                    </ul>
+                </div>
+                <div class="flex-item">
+                    <h3>Epekto sa Ekonomiya</h3>
+                    <ul>
+                        <li>Pagbaba ng nalilikom na buwis ng bansa.</li>
+                        <li>Banta sa kapakanan/kaligtasan ng mga mamimili.</li>
+                        <li>Paglaganap ng mga ilegal na gawain.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="reveal">Mga Batas at Patakaran</h2>
+            <table class="program-table reveal">
+                <thead>
+                    <tr>
+                        <th style="width: 35%;">Batas / Titulo</th>
+                        <th>Layunin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>RA 8425</strong><br>Social Reform Act</td>
+                        <td>Iahon sa kahirapan ang mga nasa impormal na sektor sa pamamagitan ng National Anti-Poverty Commission (NAPC).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RA 9710</strong><br>Magna Carta of Women</td>
+                        <td>Pag-alis ng diskriminasyon laban sa kababaihan sa paggawa.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PD 442</strong><br>Philippine Labor Code</td>
+                        <td>Pangunahing batas para sa karapatan ng mga manggagawa (May 1, 1974).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RA 8282 & RA 7875</strong></td>
+                        <td>Pagtatakda ng seguridad panlipunan (SSS) at kaseguruhang pangkalusugan (PhilHealth).</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 class="reveal" style="margin-top: 40px;">Mga Programa para sa Mamamayan</h2>
+            <div class="law-grid reveal">
+                <table class="program-table">
+                    <tr><td><strong>DILP (DOLE):</strong></td><td>Pagsasanay at tulong pangkabuhayan para sa sariling hanapbuhay.</td></tr>
+                    <tr><td><strong>SEA-K:</strong></td><td>Pagsasanay at pagsisimula ng negosyo para sa mahihirap na pamilya.</td></tr>
+                    <tr><td><strong>ISLA:</strong></td><td>Suporta at kagamitan para sa kabuhayan ng mga mangingisda.</td></tr>
+                    <tr><td><strong>Cash-For-Work:</strong></td><td>Pansamantalang kita kapalit ng rehabilitasyong trabaho para sa mga nasalanta.</td></tr>
+                    <tr><td><strong>4Ps:</strong></td><td>Tulong-pinansyal kapalit ng pagsunod sa kondisyong pangkalusugan at edukasyon.</td></tr>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+            
+            let reveals = document.querySelectorAll(".reveal");
+            for (let i = 0; i < reveals.length; i++) {
+                let windowHeight = window.innerHeight;
+                let elementTop = reveals[i].getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        };
+    </script>
+</body>
+</html>
