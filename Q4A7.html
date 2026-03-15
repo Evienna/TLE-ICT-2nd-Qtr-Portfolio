@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vivienne's E-Portfolio - Q4A7 Kalakalang Panlabas</title>
+    <link rel="stylesheet" href="ap.css" type="text/css">
+    <style type="text/css">
+        .lesson-header { border-bottom: 5px solid #006052; margin-bottom: 30px; padding-bottom: 10px; }
+        .lesson-header h1 { text-shadow: 2px 2px #f4fffc; color: #023236; }
+        
+        /* Global Trade Theme */
+        .trade-intro { background: #023236; color: white; padding: 25px; border-radius: 15px; margin-bottom: 30px; border-top: 8px solid #2ac2a9; }
+        
+        /* Export/Import Cards */
+        .trade-flow { display: flex; gap: 20px; margin: 20px 0; }
+        .flow-card { flex: 1; padding: 20px; border-radius: 12px; text-align: center; color: white; }
+        .export { background: #27ae60; }
+        .import { background: #2980b9; }
+
+        /* Dashboard for BOT */
+        .dashboard { background: #f4fffc; border: 2px solid #006052; padding: 20px; border-radius: 15px; margin: 25px 0; }
+        .dash-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px; }
+        .dash-item { background: white; padding: 15px; border-radius: 8px; border-left: 5px solid #006052; }
+
+        /* Organizations Section */
+        .org-card { background: white; margin-bottom: 20px; padding: 20px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); border: 1px solid #eee; }
+        .org-card h3 { color: #006052; margin-top: 0; display: flex; justify-content: space-between; }
+        .est-date { font-size: 0.7em; background: #e0f2f1; padding: 3px 10px; border-radius: 10px; color: #006052; }
+
+        /* Globaliztion / Outsourcing */
+        .outsource-box { background: #fffde7; padding: 20px; border-radius: 12px; border: 1px solid #fbc02d; margin: 20px 0; }
+
+        /* Reveal & Progress */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        #progress-container { position: fixed; top: 0; left: 0; width: 100%; height: 5px; background: transparent; z-index: 2000; }
+        #progress-bar { height: 100%; background: #2ac2a9; width: 0%; }
+    </style>
+</head>
+
+<body>
+    <div id="progress-container"><div id="progress-bar"></div></div>
+    
+    <h1 style="margin:0;" class="h1">Vivienne's E-Portfolio</h1>
+
+    <nav class="navbar">
+        <a class="nava" href="index.html">My Personal Space</a>
+        <a class="nava" href="TLE.html">TLE-ICT Outputs</a>
+        <a class="nava" href="R.html">2nd Qtr Reflections</a>
+        <a class="nava" href="AP.html">AP Contents</a>
+        <span class="navspan"></span>
+    </nav>
+
+    <div class="h2">
+        <img src="AP CONTENT.png" alt="BANNER" width="100%">
+    </div>
+
+    <br><hr style="border: 7px dotted #006052;"><br>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Aralin</h2>
+            <ul>
+                <li><a href="AP.html">Yunit II - Maykroekonomiks </a></li>
+                <li><a href="Q2A1.html">Q2 Demand</a></li>
+                <li><a href="Q2A2.html">Q2 Supply</a></li>
+                <li><a href="Q2A3.html">Q2 Price Elasticity</a></li>
+                <li><a href="Q2A4.html">Q2 Market Equilibrium</a></li>
+                <li><a href="Q2A5.html">Q2 Iba't Ibang Estruktura sa Pamilihan</a></li>
+                <li><a href="Q2A6.html">Q2 Bahaging Ginagampanan ng Pamahalaan sa Regulasyon ng mga Gawaing Pangkabuhayan</a></li>
+                <li><a href="Q2REF.html">Q2 Reflection</a></li>
+                <li><a href="AP4.html">Yunit IV - Pambansang Kaunlaran </a></li>
+                <li><a href="Q4A1.html">Q4 Pambansang Kaunlaran</a></li>
+                <li><a href="Q4A2.html">Q4 Mga Gampanin ng Mamamayan sa Pag-Unlad ng Bansa</a></li>
+                <li><a href="Q4A3.html">Q4 Sektor ng Agrikultura</a></li>
+                <li><a href="Q4A4.html">Q4 Sektor ng Industriya</a></li>
+                <li><a href="Q4A5.html">Q4 Sektor ng Paglilingkod</a></li>
+                <li><a href="Q4A6.html">Q4 Impormal Sektor</a></li>
+                <li><a href="Q4A7.html" style="background: rgba(255,255,255,0.2); color:#67e5ac;">Q4 Kalakalang Panlabas</a></li>
+                <li><a href="Q4REF.html">Q4 Reflection</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section class="lesson-header reveal">
+                <h1>Kalakalang Panlabas</h1>
+                <p class="subtitle">International Trade: Ang Ugnayan ng mga Bansa</p>
+            </section>
+
+            <div class="trade-intro reveal">
+                <p>Ang <strong>Kalakalang Panlabas</strong> ay ang palitan ng produkto at serbisyo sa pagitan ng mga bansa. Nagaganap ito dahil walang bansa ang kayang tumugon sa lahat ng kanyang pangangailangan nang mag-isa.</p>
+                <div class="trade-flow">
+                    <div class="flow-card export"><strong>EKSPORT</strong><br>Pagluluwas ng produkto</div>
+                    <div class="flow-card import"><strong>IMPORT</strong><br>Pag-aangkat ng produkto</div>
+                </div>
+            </div>
+
+            <h2 class="reveal">Balance of Trade (BOT)</h2>
+            <div class="dashboard reveal">
+                <p>Ito ang kalagayan ng kabayaran ng pagluluwas (export) at pag-aangkat (import) ng isang bansa.</p>
+                <div class="dash-grid">
+                    <div class="dash-item">
+                        <h4 style="color:#27ae60; margin:0;">Trade Surplus</h4>
+                        <p style="font-size: 0.9em;">Export > Import (Mas mataas ang benta kaysa bili)</p>
+                    </div>
+                    <div class="dash-item">
+                        <h4 style="color:#e74c3c; margin:0;">Trade Deficit</h4>
+                        <p style="font-size: 0.9em;">Import > Export (Mas mataas ang bili kaysa benta)</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="reveal">Batayan at Patakaran</h2>
+            <div class="agri-grid reveal">
+                <div class="agri-card">
+                    <h3>Absolute Advantage</h3>
+                    <p>Nakakalikha ng mas maraming produkto gamit ang mas kaunting salik kumpara sa iba.</p>
+                </div>
+                <div class="agri-card">
+                    <h3>Comparative Advantage</h3>
+                    <p>Espesyalisasyon sa paglikha ng kalakal nang mas efficient (Hal. Lechon sa Cebu).</p>
+                </div>
+                <div class="agri-card">
+                    <h3>Tariff, Quota & Subsidy</h3>
+                    <p>Mga tool ng pamahalaan upang kontrolin ang pasok ng dayuhang produkto at tulungan ang lokal na industriya.</p>
+                </div>
+            </div>
+
+            <h2 class="reveal">Samahang Pandaigdig</h2>
+            <div class="org-card reveal">
+                <h3>World Trade Organization (WTO) <span class="est-date">Jan 1, 1995</span></h3>
+                <p>Namamahala sa global trading system at nagpabababa ng trade barriers.</p>
+            </div>
+            <div class="org-card reveal">
+                <h3>APEC <span class="est-date">Nov 1989</span></h3>
+                <p>Isinusulong ang liberalisasyon ng kalakalan sa Asia-Pacific region.</p>
+            </div>
+            <div class="org-card reveal">
+                <h3>ASEAN <span class="est-date">Aug 8, 1967</span></h3>
+                <p>Malayang kalakalan sa Timog-Silangang Asya (AFTA & CEPT).</p>
+            </div>
+
+            <h2 class="reveal">Globalisasyon at Outsourcing</h2>
+            <div class="outsource-box reveal">
+                <p><strong>Outsourcing:</strong> Pagkuha ng serbisyo mula sa ibang kompanya upang mapagaan ang gawain.</p>
+                <ul>
+                    <li><strong>Offshoring:</strong> Sa malayang bansa (mababang bayad).</li>
+                    <li><strong>Nearshoring:</strong> Sa kalapit na bansa (same time zone).</li>
+                    <li><strong>On-shoring:</strong> Domestic outsourcing (loob ng bansa).</li>
+                </ul>
+            </div>
+
+            <div class="sangay-box reveal">
+                <h3>Karagdagang Impormasyon 🩷</h3>
+                <p><strong>Liberalisasyon:</strong> Pagtanggal ng kota/taripa. | <strong>Deregulasyon:</strong> Pagtanggal ng pakikialam ng gobyerno. | <strong>Dumping:</strong> Pagdagsa ng sobrang kalakal mula sa malakas na bansa.</p>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+            
+            let reveals = document.querySelectorAll(".reveal");
+            for (let i = 0; i < reveals.length; i++) {
+                let windowHeight = window.innerHeight;
+                let elementTop = reveals[i].getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        };
+    </script>
+</body>
+</html>
